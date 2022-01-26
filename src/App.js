@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import { Routes, Route } from "react-router-dom";
 import './App.css';
+import DetailsCharacters from "./components/DetailsCharacters";
+import Header from './components/Header';
+import Home from './screens/Home'
+import { useLocation } from "react-router-dom";
+
 
 function App() {
+  let location = useLocation()
+  let backgroundLocation = location.state && location.state.backgroundLocation
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Routes location={backgroundLocation || location}>
+        <Route  path = "/" element={<Home />} />
+        <Route path = "/pokemon/:id" element={<DetailsCharacters/>} />
+      </Routes>
+      {backgroundLocation && (
+      <Routes>
+        <Route path = "/pokemon/:id" element={<DetailsCharacters/>} />
+      </Routes>
+      )}
     </div>
   );
 }

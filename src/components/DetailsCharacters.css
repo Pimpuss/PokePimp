@@ -1,0 +1,23 @@
+.blackContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.detailContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 80vh;
+    background-color: rgb(133, 133, 165);
+}
+
+.detailName {
+    font-size: 3em;
+    text-transform: uppercase;
+}
