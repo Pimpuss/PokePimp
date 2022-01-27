@@ -149,9 +149,10 @@ code {
     margin-top: 1rem;
 }
 
-h3 {
+.characterName {
     margin-bottom: 0.2rem;
     margin-block-start: 0;
+    text-transform: uppercase;
 }
 
 .thumb-container .number {
@@ -174,6 +175,8 @@ h3 {
 
 .thumb-container small {
     text-transform: capitalize;
+    font-style: oblique;
+    font-size: 0.9em;
 }
 
 .detail-wrapper {

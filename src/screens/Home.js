@@ -20,9 +20,12 @@ const Home = () => {
                 const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon.name}`)
                 const data = await res.json()
                 setAllPokemons ( currentList => [...currentList, data])
+                
             })
         }
+        
         createPokemonObject(data.results)
+        
     }
     
 
