@@ -41,13 +41,13 @@ const Home = () => {
             <div className="pokemonContainer">
                 <div className="allContainer">
                     {allPokemons.map( (pokemonStats, id) =>
-                    <Link key={id} to={`/pokemon/${pokemonStats.id}`} state={{backgroundLocation: location}}>
+                    <Link key={id} to={`/pokemon/${pokemonStats.id}`} state={{backgroundLocation: location, type:pokemonStats.types}}>
                     <Characters
                         id={pokemonStats.id}
                         image={pokemonStats.sprites.other["official-artwork"].front_default} 
                         name={pokemonStats.name}
                         type={pokemonStats.types[0].type.name}
-                    /> </Link>)}
+                    /></Link>)}
                     
                 </div>
                 <button className="loadMore" onClick={() => getAllPokemons()}> Charger d'autres Pokémons</button>

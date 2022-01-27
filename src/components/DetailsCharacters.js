@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import {  useNavigate, useParams } from "react-router-dom"
+import {  useNavigate, useParams, useLocation } from "react-router-dom"
 import './DetailsCharacters.css'
 import background from '../assets/background3.png'
+
 
 
 
@@ -44,7 +45,7 @@ const DetailsCharacters = ({}) => {
                         .filter(el => el.language.name.includes('fr'))
                         .map(nom => nom.name)
                         }ㅤ</h3>
-                        <p className="numDex"> № 0{detailPokemon.id}</p>
+                        <p className="numDex"> #0{detailPokemon.id}</p>
                     </div>
                     <div className="firstContainer">
                         <div className="img">
@@ -57,6 +58,26 @@ const DetailsCharacters = ({}) => {
                             .filter(el => el.language.name.includes('fr'))
                             .map(desc => desc.flavor_text)
                             }</p>
+                            <div className="moreInfo">
+                                <div className="div1"><p>Taille : <span className="blackText">{detailPokemon.height} cm</span></p></div>
+                                <div className="div2"><p>Poids : <span className="blackText">{detailPokemon.weight} hg</span></p></div>
+                                <div className="div3"><p>Catégorie : <span className="blackText">{detailPokemonSpecies.genera !== undefined && detailPokemonSpecies.genera
+                                .filter(el => el.language.name.includes('fr'))
+                                .map(genre => genre.genus)
+                                }</span></p></div>
+                                <div className="div4"><p>Taux de capture : <span className="blackText">{detailPokemonSpecies.capture_rate}</span></p></div>
+                                <div className="div5"><p>Nb de pas pour éclosion : <span className="blackText">{detailPokemonSpecies.hatch_counter}</span></p></div>
+                            </div>
+                            
+                            <div className="titleType">
+                                <p>Type :</p>
+                            </div>
+                                <div className="holderType">
+                                    {detailPokemon.types !== undefined && detailPokemon.types
+                                        .map(type => <div className="typeFinal"><p className={type.type.name} >{type.type.name}</p></div>)
+                                    }
+                                </div>
+                            
                         </div>
                     </div>
                 </div>
