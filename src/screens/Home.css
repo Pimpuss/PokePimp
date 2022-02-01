@@ -8,6 +8,7 @@ body {
     background: #424242 url(https://assets.pokemon.com/static2/_ui/img/chrome/body_bg.png);
     text-decoration: none;
     list-style: none;
+    
 }
 
 a {
@@ -109,6 +110,15 @@ code {
     align-items: center;
     justify-content: center;
     padding: 0 2.5rem;
+}
+
+.none {
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 2.5rem;
 }
 
 .pokemonContainer {

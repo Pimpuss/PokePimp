@@ -10,11 +10,11 @@
 
 .backgroundContainer {
     position: fixed;
-    top: 8%;
+    top: 5%;
     left: 50%;
     transform: translateX(-50%);
     width: 80vw;
-    height: 80vh;
+    height: 90vh;
     background-attachment:inherit;
     background-size: cover;
     border-radius: 20px 20px 20px 20px / 20px 20px 20px 20px;
@@ -24,7 +24,7 @@
 }
 
 .detailContainer {
-    height: 90vh;
+    height: 100vh;
     background: rgb(26 25 25 / 80%);
     background-repeat: no-repeat !important;
     background-attachment: fixed !important;
@@ -82,7 +82,7 @@
     text-align: center;
     background: #4c91ac66;
     border-radius: 20px 20px 20px 20px / 20px 20px 20px 20px;
-    font-size: 1.5em;
+    font-size: 1.6em;
     width: 100%;
     color: whitesmoke;
     }
@@ -138,8 +138,6 @@
     .titleType > p {
         margin-block-end: 0;
         margin-block-start: 0;
-        padding-left: 2%;
-
     }   
 
     .holderType {
