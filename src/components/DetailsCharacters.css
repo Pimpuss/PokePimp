@@ -1,172 +1,172 @@
 .blackContainer {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.8);
-    
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.popUpModal {
+  z-index: 1060;
+  position: absolute;
+  top: 5%;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .backgroundContainer {
-    position: fixed;
-    top: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80vw;
-    height: 90vh;
-    background-attachment:inherit;
-    background-size: cover;
-    border-radius: 20px 20px 20px 20px / 20px 20px 20px 20px;
-    overflow: hidden;
-    
-    
+  background-attachment: inherit;
+  background-size: cover;
+  border-radius: 20px 20px 20px 20px / 20px 20px 20px 20px;
+  overflow: hidden;
 }
 
 .detailContainer {
-    height: 100vh;
-    background: rgb(26 25 25 / 80%);
-    background-repeat: no-repeat !important;
-    background-attachment: fixed !important;
-    position: relative;
-    backdrop-filter: blur(7px);
-} 
+  height: 90vh;
+  background: rgb(26 25 25 / 80%);
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  position: relative;
+  backdrop-filter: blur(19px) !important;
+  overflow: overlay;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
 
 .infoName {
-    display: flex;
-    justify-content: center;
-    padding-top: 2%;
+  display: flex;
+  justify-content: center;
+  padding-top: 2%;
 }
 .detailName {
-    font-size: 3em;
-    text-transform: uppercase;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    color: white;
+  font-size: 3em;
+  text-transform: uppercase;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  color: white;
 }
 
 .numDex {
-    font-size: 3em;
-    margin-block-end: 0;
-    margin-block-start: 0;
-    color: white;
+  font-size: 3em;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  color: white;
 }
 
 .firstContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 3%;
 }
 
 .description {
-    color: white;
-    font-size: 2.5vh;
-    margin-block-end: 2em;
+  color: white;
+  font-size: 2.5vh;
+  margin-block-end: 2em;
 }
 
 .holderDescription {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
 .moreInfo {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    text-align: center;
-    background: #4c91ac66;
-    border-radius: 20px 20px 20px 20px / 20px 20px 20px 20px;
-    font-size: 1.6em;
-    width: 100%;
-    color: whitesmoke;
-    }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  text-align: center;
+  background: #4c91ac66;
+  border-radius: 20px 20px 20px 20px / 20px 20px 20px 20px;
+  font-size: 1.6em;
+  width: 100%;
+  color: whitesmoke;
+}
 
-    .div1 { 
-        grid-area: 1 / 1 / 2 / 2; 
-        display: flex;
-        justify-content: center;
-    }
-    .div2 { 
-        grid-area: 1 / 2 / 2 / 3; 
-        display: flex;
-        justify-content: center;
-    }
-    .div3 { 
-        grid-area: 2 / 1 / 3 / 2; 
-        display: flex;
-        justify-content: center;
-    }
-    .div4 { 
-        grid-area: 2 / 2 / 3 / 3;
-        display: flex;
-        justify-content: center;
-    }
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+  display: flex;
+  justify-content: center;
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+  display: flex;
+  justify-content: center;
+}
+.div3 {
+  grid-area: 2 / 1 / 3 / 2;
+  display: flex;
+  justify-content: center;
+}
+.div4 {
+  grid-area: 2 / 2 / 3 / 3;
+  display: flex;
+  justify-content: center;
+}
 
-    .div5 { 
-        grid-area: 3 / 1 / 4 / 3;
-        display: flex;
-        justify-content: center; 
-    }
-    .div6 { 
-        grid-area: 3 / 2 / 4 / 3; 
-        display: flex;
-        justify-content: center;
-    }
+.div5 {
+  grid-area: 3 / 1 / 4 / 3;
+  display: flex;
+  justify-content: center;
+}
+.div6 {
+  grid-area: 3 / 2 / 4 / 3;
+  display: flex;
+  justify-content: center;
+}
 
-    .blackText {
-        color: black;
-    }
+.blackText {
+  color: black;
+}
 
-    .titleType {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        color: white;
-        font-size: 2.5vh;
-        margin-top: 3%;
-        margin-bottom: 3%;
+.titleType {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 2.5vh;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
 
-        
-    }
+.titleType > p {
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
 
-    .titleType > p {
-        margin-block-end: 0;
-        margin-block-start: 0;
-    }   
+.holderType {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  color: white;
+  text-transform: uppercase;
+}
 
-    .holderType {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        color: white;
-        text-transform: uppercase;
-    }
-
-    .typeFinal > p {
-        margin-block-end: 0;
-        margin-block-start: 0; 
-        text-align: center;
-        padding: 6.5%;
-        border-radius: 15px 15px 15px 15px / 15px 15px 15px 15px;
-        width: 100%;
+.typeFinal > p {
+  margin-block-end: 0;
+  margin-block-start: 0;
+  text-align: center;
+  padding: 6.5%;
+  border-radius: 15px 15px 15px 15px / 15px 15px 15px 15px;
+  width: 100%;
 }
 
 .typeFinal {
-    width: 20%;
-    display: flex;
-    align-content: center;
-    align-items: center;
+  width: 20%;
+  display: flex;
+  align-content: center;
+  align-items: center;
 }
 
-    
-    
-    .colorType {
-        font-size: 2vh;
-        text-transform: uppercase;
-    }
+.colorType {
+  font-size: 2vh;
+  text-transform: uppercase;
+}
