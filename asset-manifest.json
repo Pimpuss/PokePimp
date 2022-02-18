@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/PokePimp/static/css/main.1597e299.css",
+    "main.js": "/PokePimp/static/js/main.35679cca.js",
+    "static/js/787.7e0b23c5.chunk.js": "/PokePimp/static/js/787.7e0b23c5.chunk.js",
+    "static/media/background3.png": "/PokePimp/static/media/background3.659819b11de3d9cc178f.png",
+    "static/media/logo.png": "/PokePimp/static/media/logo.78554f5d9a0217489cd0.png",
+    "index.html": "/PokePimp/index.html",
+    "main.1597e299.css.map": "/PokePimp/static/css/main.1597e299.css.map",
+    "main.35679cca.js.map": "/PokePimp/static/js/main.35679cca.js.map",
+    "787.7e0b23c5.chunk.js.map": "/PokePimp/static/js/787.7e0b23c5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1597e299.css",
+    "static/js/main.35679cca.js"
+  ]
+}
