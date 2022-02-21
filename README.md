@@ -18,6 +18,9 @@ Afin de connaitre les informations complètes sur le Pokémon voulu un modal s'o
 ![3c06ac605be7e7dfd9fbf0107e569b02](https://user-images.githubusercontent.com/89353029/153377982-89addd6e-5762-4486-9afe-bee11e4af07d.png)
 ![81e5927979a0d41dfb4069accdeea98c](https://user-images.githubusercontent.com/89353029/153377997-21ceae65-3779-41bc-8f80-e18a18dc33dc.png)
 
+## 📎 Lien vers l'aperçu : 
+https://pimpuss.github.io/PokePimp/
+
 
 
 
